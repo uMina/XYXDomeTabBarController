@@ -8,11 +8,11 @@
 - XYXDomeTabBar 用来自定义凸起按钮
 - XYXShadeView 用来自定义凸起按钮的点击后操作
 
-'''
-/// domeIndex 用来制定凸起按钮的位置，从0开始计数
-/// 需注意的一点是，本Demo并不对domeIndex进行越界检查，调用时请根据自己添加的chilViewController的个数来确定domeIndex数值
 let tabBar = XYXDomeTabBar.init(frame: self.tabBar.frame, domeIndex:0)
-'''
+
+第二个参数 domeIndex 用来制定凸起按钮的位置，从0开始计数
+
+需注意的一点是，本Demo并不对domeIndex进行越界检查，调用时请根据自己添加的chilViewController的个数来确定domeIndex数值
 
 domeIndex = 0时：👇
 
