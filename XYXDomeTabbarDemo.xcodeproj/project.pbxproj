@@ -11,6 +11,7 @@
 		F44648421FCC19E4002208EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44648401FCC19E4002208EF /* Main.storyboard */; };
 		F44648441FCC19E4002208EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F44648431FCC19E4002208EF /* Assets.xcassets */; };
 		F44648471FCC19E4002208EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44648451FCC19E4002208EF /* LaunchScreen.storyboard */; };
+		F49F5A5A1FCD5B5E00E80CF6 /* XYXShadeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49F5A591FCD5B5E00E80CF6 /* XYXShadeView.swift */; };
 		F4AC1D9A1FCCF6E400555285 /* XYXDomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AC1D991FCCF6E400555285 /* XYXDomeTabBarController.swift */; };
 		F4AC1D9E1FCCFFB900555285 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AC1D9D1FCCFFB900555285 /* ViewController1.swift */; };
 		F4AC1DA01FCCFFED00555285 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AC1D9F1FCCFFED00555285 /* ViewController2.swift */; };
@@ -26,6 +27,7 @@
 		F44648431FCC19E4002208EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F44648461FCC19E4002208EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F44648481FCC19E4002208EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F49F5A591FCD5B5E00E80CF6 /* XYXShadeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYXShadeView.swift; sourceTree = "<group>"; };
 		F4AC1D991FCCF6E400555285 /* XYXDomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYXDomeTabBarController.swift; sourceTree = "<group>"; };
 		F4AC1D9D1FCCFFB900555285 /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 		F4AC1D9F1FCCFFED00555285 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			children = (
 				F4AC1D991FCCF6E400555285 /* XYXDomeTabBarController.swift */,
 				F4AC1DA51FCD2ED100555285 /* XYXDomeTabBar.swift */,
+				F49F5A591FCD5B5E00E80CF6 /* XYXShadeView.swift */,
 			);
 			path = XYXDomeTabBarController;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				F4AC1D9E1FCCFFB900555285 /* ViewController1.swift in Sources */,
 				F4AC1DA01FCCFFED00555285 /* ViewController2.swift in Sources */,
 				F446483D1FCC19E4002208EF /* AppDelegate.swift in Sources */,
+				F49F5A5A1FCD5B5E00E80CF6 /* XYXShadeView.swift in Sources */,
 				F4AC1D9A1FCCF6E400555285 /* XYXDomeTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

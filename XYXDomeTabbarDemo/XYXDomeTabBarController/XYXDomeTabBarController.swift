@@ -44,15 +44,20 @@ class XYXDomeTabBarController: UITabBarController {
     }
     
     fileprivate func configureTabBar() {
-        let tabBar = XYXDomeTabBar.init(frame: self.tabBar.frame, domeIndex:2)
+        let tabBar = XYXDomeTabBar.init(frame: self.tabBar.frame, domeIndex:0)
         self.setValue(tabBar, forKey: "tabBar")
         tabBar.domeButton.addTarget(self, action: #selector(domeButtonClicked(_:)), for: UIControlEvents.touchUpInside)
+        
     }
     
     @objc fileprivate func domeButtonClicked(_ sender:UIButton){
-        let alertController = UIAlertController.init(title: "点击事件", message: "自行添加处理代码吧", preferredStyle: UIAlertControllerStyle.alert)
-        let okAction = UIAlertAction(title: "知道啦", style: .default, handler: nil)
-        alertController.addAction(okAction)
-        self.present(alertController, animated: true, completion: nil)
+        let point = CGPoint(x: sender.center.x, y: self.tabBar.frame.minY)
+        let shadeView = XYXShadeView(originalPoint: point)
+        self.view.addSubview(shadeView)
+        shadeView.bubbleView.btnA.addTarget(self, action: #selector(doWhatYouWant), for: UIControlEvents.touchUpInside)
+    }
+    
+    @objc fileprivate func doWhatYouWant(){
+        print("Do what you want")
     }
 }

@@ -37,13 +37,13 @@ class XYXDomeTabBar: UITabBar {
         let btnWidth = self.bounds.width/CGFloat(self.subviews.count-1)
         
         for subView in self.subviews {
+            if idx == self.domeIndex{
+                idx += 1
+            }
             
             if NSStringFromClass(subView.classForCoder) == "UITabBarButton"{
                 subView.frame = CGRect(x: CGFloat(idx) * btnWidth, y: self.bounds.minY, width: btnWidth, height: self.bounds.height-2)
                 idx += 1
-                if idx == self.domeIndex{
-                    idx += 1
-                }
             }else if subView.isKind(of: NSClassFromString("UIButton")!){
                 domeButton.center = CGPoint(x:(CGFloat(self.domeIndex) + 0.5)*btnWidth, y:self.bounds.size.height * 0.3)
             }

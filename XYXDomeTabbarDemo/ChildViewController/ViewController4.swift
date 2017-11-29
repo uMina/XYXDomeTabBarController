@@ -11,7 +11,19 @@ import UIKit
 
 class ViewController4: UIViewController {
     override func viewDidLoad() {
-        self.view.backgroundColor = UIColor.init(red: 250/255.0, green: 251/255.0, blue: 115/255.0, alpha: 1)
+        self.view.backgroundColor = UIColor.init(red: 220/255.0, green: 151/255.0, blue: 122/255.0, alpha: 1)
+        
+        let label = UILabel.init()
+        label.text = "Welcome to my blog \n http://umina.github.io/"
+        label.numberOfLines = 0
+        label.textAlignment = .center
+        label.textColor = UIColor.white
+        label.font = UIFont.systemFont(ofSize: 18.0)
+        label.sizeToFit()
+        label.layer.cornerRadius = 15.0
+        label.layer.masksToBounds = true
+        label.center = CGPoint(x:view.center.x,y:view.frame.height - 100)
+        view.addSubview(label)
     }
 }
 
