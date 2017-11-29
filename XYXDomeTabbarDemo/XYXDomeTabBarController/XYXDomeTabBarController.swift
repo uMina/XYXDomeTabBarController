@@ -44,7 +44,7 @@ class XYXDomeTabBarController: UITabBarController {
     }
     
     fileprivate func configureTabBar() {
-        let tabBar = XYXDomeTabBar.init(frame: self.tabBar.frame, domeIndex:0)
+        let tabBar = XYXDomeTabBar.init(frame: self.tabBar.frame, domeIndex:4)
         self.setValue(tabBar, forKey: "tabBar")
         tabBar.domeButton.addTarget(self, action: #selector(domeButtonClicked(_:)), for: UIControlEvents.touchUpInside)
         
