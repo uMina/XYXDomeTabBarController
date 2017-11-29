@@ -12,6 +12,7 @@
 /// 需注意的一点是，本Demo并不对domeIndex进行越界检查，调用时请根据自己添加的chilViewController的个数来确定domeIndex数值
 let tabBar = XYXDomeTabBar.init(frame: self.tabBar.frame, domeIndex:0)
 '''
+
 domeIndex = 0时：👇
 <center> ![domeIndex = 0](./ReadMe/0.png)</center>>
 
@@ -25,4 +26,4 @@ domeIndex = 3时：👇
 <center> ![domeIndex = 3](./ReadMe/3.png)</center>
 
 domeIndex = 4时：👇
-<center> ![domeIndex = 4](./ReadMe/4.png)</center> 
+<center> ![domeIndex = 4](./ReadMe/4.png)</center>
