@@ -1,6 +1,6 @@
 # XYXDomeTabBarController
 使用Swift编写的轻量的DomeTabBar，凸起按钮可以任意设定一个位置。
-<center> ![gif](./ReadMe/aa.gif) </center>
+![gif](./ReadMe/aa.gif)
 
 框架一共三个文件，分别是：
 - XYXDomeTabBarController 继承自UITabBarController，在这里初始化所有ChildViewController
@@ -14,16 +14,21 @@ let tabBar = XYXDomeTabBar.init(frame: self.tabBar.frame, domeIndex:0)
 '''
 
 domeIndex = 0时：👇
-<center> ![domeIndex = 0](./ReadMe/0.png)</center>>
+
+![domeIndex = 0](./ReadMe/0.png)
 
 domeIndex = 1时：👇
-<center> ![imdomeIndex = 1](./ReadMe/1.png)</center>
+
+![imdomeIndex = 1](./ReadMe/1.png)
 
 domeIndex = 2时：👇
-<center> ![domeIndex = 2](./ReadMe/2.png)</center>
+
+![domeIndex = 2](./ReadMe/2.png)
 
 domeIndex = 3时：👇
-<center> ![domeIndex = 3](./ReadMe/3.png)</center>
+
+![domeIndex = 3](./ReadMe/3.png)
 
 domeIndex = 4时：👇
-<center> ![domeIndex = 4](./ReadMe/4.png)</center>
+
+![domeIndex = 4](./ReadMe/4.png)
