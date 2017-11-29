@@ -1,5 +1,6 @@
 # XYXDomeTabBarController
 使用Swift编写的轻量的DomeTabBar，凸起按钮可以任意设定一个位置。
+
 ![gif](./ReadMe/aa.gif)
 
 框架一共三个文件，分别是：
