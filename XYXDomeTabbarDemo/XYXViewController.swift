@@ -26,7 +26,12 @@ class XYXViewController: XYXDomeTabBarController {
                 }
             }
         }
-        
         self.domeIndex = 1
     }
+    
+    /*
+    override func domeButtonClicked(_ sender: UIButton) {
+        <#code#>
+    }
+    */
 }
