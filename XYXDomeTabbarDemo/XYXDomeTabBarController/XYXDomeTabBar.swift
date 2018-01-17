@@ -11,6 +11,18 @@ import UIKit
 
 class XYXDomeTabBar: UITabBar {
     
+    var domeImageName:String = "Add"{
+        didSet{
+            domeButton.setImage(UIImage.init(named: domeImageName), for: UIControlState.normal)
+        }
+    }
+    
+    var domeImageNameHighlighted:String = "Add_Highlighted"{
+        didSet{
+            domeButton.setImage(UIImage.init(named: domeImageNameHighlighted), for: UIControlState.highlighted)
+        }
+    }
+    
     let domeButton = UIButton.init(type: UIButtonType.custom)
     private var domeIndex = 0
     

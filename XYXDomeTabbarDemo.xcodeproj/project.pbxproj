@@ -18,6 +18,7 @@
 		F4AC1DA21FCD000800555285 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AC1DA11FCD000800555285 /* ViewController3.swift */; };
 		F4AC1DA41FCD001C00555285 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AC1DA31FCD001C00555285 /* ViewController4.swift */; };
 		F4AC1DA61FCD2ED100555285 /* XYXDomeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AC1DA51FCD2ED100555285 /* XYXDomeTabBar.swift */; };
+		F4BE4DF6200F2318000D0AC9 /* XYXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BE4DF5200F2318000D0AC9 /* XYXViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		F4AC1DA11FCD000800555285 /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		F4AC1DA31FCD001C00555285 /* ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
 		F4AC1DA51FCD2ED100555285 /* XYXDomeTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYXDomeTabBar.swift; sourceTree = "<group>"; };
+		F4BE4DF5200F2318000D0AC9 /* XYXViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYXViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				F446483C1FCC19E4002208EF /* AppDelegate.swift */,
+				F4BE4DF5200F2318000D0AC9 /* XYXViewController.swift */,
 				F4AC1D9B1FCCF6EF00555285 /* XYXDomeTabBarController */,
 				F4AC1D9C1FCCFF8D00555285 /* ChildViewController */,
 				F44648401FCC19E4002208EF /* Main.storyboard */,
@@ -173,6 +176,7 @@
 				F4AC1DA21FCD000800555285 /* ViewController3.swift in Sources */,
 				F4AC1DA61FCD2ED100555285 /* XYXDomeTabBar.swift in Sources */,
 				F4AC1DA41FCD001C00555285 /* ViewController4.swift in Sources */,
+				F4BE4DF6200F2318000D0AC9 /* XYXViewController.swift in Sources */,
 				F4AC1D9E1FCCFFB900555285 /* ViewController1.swift in Sources */,
 				F4AC1DA01FCCFFED00555285 /* ViewController2.swift in Sources */,
 				F446483D1FCC19E4002208EF /* AppDelegate.swift in Sources */,

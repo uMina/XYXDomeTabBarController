@@ -46,7 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     private func makeRootController() -> UIViewController {
-        let rootController = XYXDomeTabBarController()
+        let rootController = XYXViewController()
         return rootController
     }
 }
