@@ -17,9 +17,13 @@ end
 
 简单又灵活的使用方式:
 1. 首先使用自定义的类,继承于XYXDomeTabBarController
-'''class YourViewController: XYXDomeTabBarController {}'''
+```Swift
+class YourViewController: XYXDomeTabBarController {}
+```
+
 2. 在init方法中初始化tab. 这样子设定是生成了普通的TabBar
-'''convenience init() {
+```Swift
+convenience init() {
         self.init(nibName: nil, bundle: nil)
         let controllers = [UIViewController(),UIViewController(),UIViewController()]  //TabBar对应的几个Controller
         let titleItems = ["A","B","C"]              //TabbarItem名称
@@ -27,16 +31,20 @@ end
         for idx in 0...controllers.count-1 {
             addChildViewController(controllers[idx], title: titleItems[idx], imageName: imageItems[idx], selectedImageName: selectedItems[idx])
         }
-}'''
+}
+```
 3. 使用两个方法可以设定为带有突出按钮的TabBarController
-'''convenience init() {
+```Swift
+convenience init() {
       //***
       self.domeIndex = 2  //设定凸起按钮的位置，从0开始计数
       //self.domeBar.domeButtonSize = CGSize(width: 50, height: 50) //设定凸起按钮的大小
-}'''
+}
+```
 
-需注意的一点是，本Demo并不对domeIndex进行越界检查，调用时请根据自己添加的chilViewController的个数来确定domeIndex数值.
-以及,当domeIndex未设定,而设定了domeButtonSize, 则默认domeIndex=0.
+    需注意的是:
+    本Demo并不对domeIndex进行越界检查，调用时请根据自己添加的chilViewController的个数来确定domeIndex数值.
+    以及,当domeIndex未设定,而设定了domeButtonSize, 则默认domeIndex=0.
 
 domeIndex = 0时：👇
 
