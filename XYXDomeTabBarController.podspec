@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
   凸起按钮的位置可以通过domeIndex自定义,凸起按钮的大小也可以通过domeBar.domeButtonSize来自定义.
                    DESC
 
-  s.homepage     = "https://github.com/uMina/XYXDomeTabBarController/tree/master"
+  s.homepage     = "https://github.com/uMina/XYXDomeTabBarController/"
   s.screenshots = "https://github.com/uMina/XYXDomeTabBarController/raw/master/ReadMe/aa.gif"
 
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -110,7 +110,7 @@ Pod::Spec.new do |s|
   #  non-essential files like tests, examples and documentation.
   #
 
-  s.resource  = "XYXDomeTabbarDemo/XYXDomeTabBarController/bundle"
+  s.resources  = "XYXDomeTabBarController/bundle/*.png"
   # s.resources = "Resources/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
@@ -139,5 +139,7 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
+
+  `echo "4.0" > .swift-version`
 
 end
