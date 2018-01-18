@@ -7,7 +7,7 @@
 ```
 target 'MyApp' do
   use_frameworks!
-  pod 'XYXDomeTabBarController', '~> 1.0.0'
+  pod 'XYXDomeTabBarController'
 end
 ```
 
