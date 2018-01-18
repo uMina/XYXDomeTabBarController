@@ -18,7 +18,7 @@ open class XYXDomeTabBarController: UITabBarController {
     }
     
     /// 可设置domeBtn
-    let domeBar = XYXDomeTabBar.init()
+    public let domeBar = XYXDomeTabBar.init()
 
     // MARK: - Life Cycle
     

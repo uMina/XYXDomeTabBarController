@@ -34,7 +34,7 @@ public class XYXDomeTabBar: UITabBar {
     
     fileprivate let domeView = UIView()
     
-    convenience init() {
+    convenience public init() {
         self.init(frame: CGRect.zero)
         
         UITabBar.appearance().isTranslucent = false
