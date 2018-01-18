@@ -3,12 +3,13 @@
 
 ![gif](./ReadMe/aa.gif)
 
-可以使用cocospod管理到项目:
+可以使用`cocospod`管理到项目:
+```
 target 'MyApp' do
   use_frameworks!
   pod 'XYXDomeTabBarController', '~> 1.0.0'
 end
-
+```
 
 框架一共三个文件，分别是：
 - XYXDomeTabBarController 继承自UITabBarController，在这里初始化所有ChildViewController
@@ -41,8 +42,14 @@ convenience init() {
       //self.domeBar.domeButtonSize = CGSize(width: 50, height: 50) //设定凸起按钮的大小
 }
 ```
+4. 可以通过对`domeButtonClicked`方法的重写, 来自定义当突出按钮被点击时的处理方式
+```Swift
+    override func domeButtonClicked(_ sender: UIButton) {
+        print("xxx 被点击了")
+    }
+```
 
-    需注意的是:
+    需注意的是:
     本Demo并不对domeIndex进行越界检查，调用时请根据自己添加的chilViewController的个数来确定domeIndex数值.
     以及,当domeIndex未设定,而设定了domeButtonSize, 则默认domeIndex=0.
 
