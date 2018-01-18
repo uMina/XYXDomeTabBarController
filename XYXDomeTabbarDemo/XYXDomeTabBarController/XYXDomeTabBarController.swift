@@ -39,7 +39,7 @@ class XYXDomeTabBarController: UITabBarController {
     
     fileprivate func configureTabBar() {
         self.setValue(domeBar, forKey: "tabBar")
-        domeBar.domeButton.addTarget(self, action: #selector(domeButtonClicked(_:)), for: UIControlEvents.touchUpInside)
+        domeBar.domeButton.addTarget(self, action: #selector(domeButtonClicked(_:)), for: UIControlEvents.touchDown)
     }
     
     // MARK: - Action
