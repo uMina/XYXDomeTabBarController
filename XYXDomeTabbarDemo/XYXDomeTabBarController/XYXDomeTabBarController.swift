@@ -13,25 +13,21 @@ class XYXDomeTabBarController: UITabBarController {
     /// 凸起按钮的位置
     var domeIndex:Int = 0{
         didSet{
-            configureTabBar()
+            domeBar.domeIndex = domeIndex
         }
     }
     
-    /// 凸起按钮的normal状态图片
-    var domeImageName:String = ""{
-        didSet{
-            let bar = self.tabBar.value(forKey: "tabBar") as! XYXDomeTabBar
-            bar.domeImageName = domeImageName
-        }
+    /// 可设置domeBtn
+    let domeBar = XYXDomeTabBar.init()
+
+    // MARK: - Life Cycle
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        configureTabBar()
     }
     
-    /// 凸起按钮的Highlighted状态图片
-    var domeImageNameHighlighted:String = ""{
-        didSet{
-            let bar = self.tabBar.value(forKey: "tabBar") as! XYXDomeTabBar
-            bar.domeImageNameHighlighted = domeImageNameHighlighted
-        }
-    }
+    // MARK: - Configure UI
     
     func addChildViewController(_ childController: UIViewController, title:String?, imageName:String?,selectedImageName:String?) {
         childController.title = title
@@ -42,10 +38,11 @@ class XYXDomeTabBarController: UITabBarController {
     }
     
     fileprivate func configureTabBar() {
-        let tabBar = XYXDomeTabBar.init(frame: self.tabBar.frame, domeIndex:domeIndex)
-        self.setValue(tabBar, forKey: "tabBar")
-        tabBar.domeButton.addTarget(self, action: #selector(domeButtonClicked(_:)), for: UIControlEvents.touchUpInside)
+        self.setValue(domeBar, forKey: "tabBar")
+        domeBar.domeButton.addTarget(self, action: #selector(domeButtonClicked(_:)), for: UIControlEvents.touchUpInside)
     }
+    
+    // MARK: - Action
     
     @objc func domeButtonClicked(_ sender:UIButton){
         let point = CGPoint(x: sender.center.x, y: self.tabBar.frame.minY)
@@ -54,7 +51,8 @@ class XYXDomeTabBarController: UITabBarController {
         shadeView.bubbleView.btnA.addTarget(self, action: #selector(doWhatYouWant), for: UIControlEvents.touchUpInside)
     }
     
-    @objc func doWhatYouWant(){
+    @objc fileprivate func doWhatYouWant(){
         print("You could overwrite ‘domeButtonClicked(_:)’ method")
     }
+    
 }

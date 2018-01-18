@@ -26,7 +26,8 @@ class XYXViewController: XYXDomeTabBarController {
                 }
             }
         }
-        self.domeIndex = 1
+        self.domeIndex = 2  
+//        self.domeBar.domeButtonSize = CGSize(width: 50, height: 50)
     }
     
     /*
