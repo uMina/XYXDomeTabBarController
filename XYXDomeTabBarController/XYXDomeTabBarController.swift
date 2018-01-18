@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-class XYXDomeTabBarController: UITabBarController {
+open class XYXDomeTabBarController: UITabBarController {
     /// 凸起按钮的位置
-    var domeIndex:Int = 0{
+    public var domeIndex:Int = 0{
         didSet{
             domeBar.domeIndex = domeIndex
         }
@@ -22,14 +22,14 @@ class XYXDomeTabBarController: UITabBarController {
 
     // MARK: - Life Cycle
     
-    override func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         configureTabBar()
     }
     
     // MARK: - Configure UI
     
-    func addChildViewController(_ childController: UIViewController, title:String?, imageName:String?,selectedImageName:String?) {
+    public func addChildViewController(_ childController: UIViewController, title:String?, imageName:String?,selectedImageName:String?) {
         childController.title = title
         childController.tabBarItem.image = UIImage.init(named: imageName ?? "")
         childController.tabBarItem.selectedImage = UIImage.init(named: selectedImageName ?? "")
@@ -44,7 +44,7 @@ class XYXDomeTabBarController: UITabBarController {
     
     // MARK: - Action
     
-    @objc func domeButtonClicked(_ sender:UIButton){
+    @objc public func domeButtonClicked(_ sender:UIButton){
         let point = CGPoint(x: sender.center.x, y: self.tabBar.frame.minY)
         let shadeView = XYXShadeView(originalPoint: point)
         self.view.addSubview(shadeView)

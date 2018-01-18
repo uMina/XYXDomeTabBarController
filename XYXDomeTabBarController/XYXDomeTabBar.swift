@@ -9,13 +9,13 @@
 import Foundation
 import UIKit
 
-class XYXDomeTabBar: UITabBar {
+public class XYXDomeTabBar: UITabBar {
     
     /// 凸起按钮.
-    let domeButton = UIButton.init(type: UIButtonType.custom)
+    public let domeButton = UIButton.init(type: UIButtonType.custom)
     
     /// 凸起按钮尺寸.
-    var domeButtonSize:CGSize?{
+    public var domeButtonSize:CGSize?{
         didSet{
             if domeIndex == -1 {
                 domeIndex = 0
@@ -26,7 +26,7 @@ class XYXDomeTabBar: UITabBar {
     }
     
     /// 凸起按钮位置: 从0开始计数. 若不设置, 则默认不显示.
-    var domeIndex = -1{
+    public var domeIndex = -1{
         didSet{
             configureDomeBtn()
         }
@@ -48,7 +48,7 @@ class XYXDomeTabBar: UITabBar {
         domeButton.setImage(UIImage.init(named: "Add_Highlighted"), for: UIControlState.highlighted)
     }
     
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         super.layoutSubviews()
         var idx = 0
         let btnWidth = self.bounds.width/CGFloat(self.subviews.count-1)
