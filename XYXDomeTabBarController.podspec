@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   凸起按钮的位置可以通过domeIndex自定义,凸起按钮的大小也可以通过domeBar.domeButtonSize来自定义.
                    DESC
 
-  s.homepage     = "https://github.com/uMina/XYXDomeTabBarController/tree/master"
+  s.homepage     = "https://github.com/uMina/XYXDomeTabBarController"
   s.screenshots = "https://github.com/uMina/XYXDomeTabBarController/raw/master/ReadMe/aa.gif"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "Teresa" => "yxx.umina@gmail.com" }
