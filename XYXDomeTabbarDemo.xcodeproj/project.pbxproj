@@ -7,34 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F426A5AD201053CE0080D621 /* XYXDomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426A5AA201053CE0080D621 /* XYXDomeTabBarController.swift */; };
+		F426A5AE201053CE0080D621 /* XYXDomeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426A5AB201053CE0080D621 /* XYXDomeTabBar.swift */; };
+		F426A5AF201053CE0080D621 /* XYXShadeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426A5AC201053CE0080D621 /* XYXShadeView.swift */; };
 		F446483D1FCC19E4002208EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F446483C1FCC19E4002208EF /* AppDelegate.swift */; };
-		F44648421FCC19E4002208EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44648401FCC19E4002208EF /* Main.storyboard */; };
 		F44648441FCC19E4002208EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F44648431FCC19E4002208EF /* Assets.xcassets */; };
 		F44648471FCC19E4002208EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44648451FCC19E4002208EF /* LaunchScreen.storyboard */; };
-		F49F5A5A1FCD5B5E00E80CF6 /* XYXShadeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49F5A591FCD5B5E00E80CF6 /* XYXShadeView.swift */; };
-		F4AC1D9A1FCCF6E400555285 /* XYXDomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AC1D991FCCF6E400555285 /* XYXDomeTabBarController.swift */; };
 		F4AC1D9E1FCCFFB900555285 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AC1D9D1FCCFFB900555285 /* ViewController1.swift */; };
 		F4AC1DA01FCCFFED00555285 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AC1D9F1FCCFFED00555285 /* ViewController2.swift */; };
 		F4AC1DA21FCD000800555285 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AC1DA11FCD000800555285 /* ViewController3.swift */; };
 		F4AC1DA41FCD001C00555285 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AC1DA31FCD001C00555285 /* ViewController4.swift */; };
-		F4AC1DA61FCD2ED100555285 /* XYXDomeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AC1DA51FCD2ED100555285 /* XYXDomeTabBar.swift */; };
 		F4BE4DF6200F2318000D0AC9 /* XYXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BE4DF5200F2318000D0AC9 /* XYXViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F426A5AA201053CE0080D621 /* XYXDomeTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYXDomeTabBarController.swift; sourceTree = "<group>"; };
+		F426A5AB201053CE0080D621 /* XYXDomeTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYXDomeTabBar.swift; sourceTree = "<group>"; };
+		F426A5AC201053CE0080D621 /* XYXShadeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYXShadeView.swift; sourceTree = "<group>"; };
 		F44648391FCC19E4002208EF /* XYXDomeTabbarDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYXDomeTabbarDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F446483C1FCC19E4002208EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F44648411FCC19E4002208EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F44648431FCC19E4002208EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F44648461FCC19E4002208EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F44648481FCC19E4002208EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F49F5A591FCD5B5E00E80CF6 /* XYXShadeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYXShadeView.swift; sourceTree = "<group>"; };
-		F4AC1D991FCCF6E400555285 /* XYXDomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYXDomeTabBarController.swift; sourceTree = "<group>"; };
 		F4AC1D9D1FCCFFB900555285 /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 		F4AC1D9F1FCCFFED00555285 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		F4AC1DA11FCD000800555285 /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		F4AC1DA31FCD001C00555285 /* ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
-		F4AC1DA51FCD2ED100555285 /* XYXDomeTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYXDomeTabBar.swift; sourceTree = "<group>"; };
 		F4BE4DF5200F2318000D0AC9 /* XYXViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYXViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,6 +47,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F426A5A9201053CE0080D621 /* XYXDomeTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				F426A5AA201053CE0080D621 /* XYXDomeTabBarController.swift */,
+				F426A5AB201053CE0080D621 /* XYXDomeTabBar.swift */,
+				F426A5AC201053CE0080D621 /* XYXShadeView.swift */,
+			);
+			path = XYXDomeTabBarController;
+			sourceTree = SOURCE_ROOT;
+		};
 		F44648301FCC19E4002208EF = {
 			isa = PBXGroup;
 			children = (
@@ -70,24 +78,13 @@
 			children = (
 				F446483C1FCC19E4002208EF /* AppDelegate.swift */,
 				F4BE4DF5200F2318000D0AC9 /* XYXViewController.swift */,
-				F4AC1D9B1FCCF6EF00555285 /* XYXDomeTabBarController */,
+				F426A5A9201053CE0080D621 /* XYXDomeTabBarController */,
 				F4AC1D9C1FCCFF8D00555285 /* ChildViewController */,
-				F44648401FCC19E4002208EF /* Main.storyboard */,
 				F44648431FCC19E4002208EF /* Assets.xcassets */,
 				F44648451FCC19E4002208EF /* LaunchScreen.storyboard */,
 				F44648481FCC19E4002208EF /* Info.plist */,
 			);
 			path = XYXDomeTabbarDemo;
-			sourceTree = "<group>";
-		};
-		F4AC1D9B1FCCF6EF00555285 /* XYXDomeTabBarController */ = {
-			isa = PBXGroup;
-			children = (
-				F4AC1D991FCCF6E400555285 /* XYXDomeTabBarController.swift */,
-				F4AC1DA51FCD2ED100555285 /* XYXDomeTabBar.swift */,
-				F49F5A591FCD5B5E00E80CF6 /* XYXShadeView.swift */,
-			);
-			path = XYXDomeTabBarController;
 			sourceTree = "<group>";
 		};
 		F4AC1D9C1FCCFF8D00555285 /* ChildViewController */ = {
@@ -162,7 +159,6 @@
 			files = (
 				F44648471FCC19E4002208EF /* LaunchScreen.storyboard in Resources */,
 				F44648441FCC19E4002208EF /* Assets.xcassets in Resources */,
-				F44648421FCC19E4002208EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,29 +169,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F426A5AE201053CE0080D621 /* XYXDomeTabBar.swift in Sources */,
 				F4AC1DA21FCD000800555285 /* ViewController3.swift in Sources */,
-				F4AC1DA61FCD2ED100555285 /* XYXDomeTabBar.swift in Sources */,
 				F4AC1DA41FCD001C00555285 /* ViewController4.swift in Sources */,
 				F4BE4DF6200F2318000D0AC9 /* XYXViewController.swift in Sources */,
 				F4AC1D9E1FCCFFB900555285 /* ViewController1.swift in Sources */,
 				F4AC1DA01FCCFFED00555285 /* ViewController2.swift in Sources */,
 				F446483D1FCC19E4002208EF /* AppDelegate.swift in Sources */,
-				F49F5A5A1FCD5B5E00E80CF6 /* XYXShadeView.swift in Sources */,
-				F4AC1D9A1FCCF6E400555285 /* XYXDomeTabBarController.swift in Sources */,
+				F426A5AF201053CE0080D621 /* XYXShadeView.swift in Sources */,
+				F426A5AD201053CE0080D621 /* XYXDomeTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F44648401FCC19E4002208EF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F44648411FCC19E4002208EF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F44648451FCC19E4002208EF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
