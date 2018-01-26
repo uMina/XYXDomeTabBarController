@@ -44,7 +44,7 @@ open class XYXDomeTabBarController: UITabBarController {
     
     // MARK: - Action
     
-    @objc public func domeButtonClicked(_ sender:UIButton){
+    @objc open func domeButtonClicked(_ sender:UIButton){
         let point = CGPoint(x: sender.center.x, y: self.tabBar.frame.minY)
         let shadeView = XYXShadeView(originalPoint: point)
         self.view.addSubview(shadeView)
