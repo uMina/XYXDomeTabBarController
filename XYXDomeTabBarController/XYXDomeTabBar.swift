@@ -12,7 +12,11 @@ import UIKit
 public class XYXDomeTabBar: UITabBar {
     
     /// 凸起按钮.
-    public let domeButton = UIButton.init(type: UIButtonType.custom)
+    public let domeButton:UIButton = {
+        let button = UIButton.init(type: UIButtonType.custom)
+        button.isHidden = true
+        return button
+    }()
     
     /// 凸起按钮尺寸.
     public var domeButtonSize:CGSize?{
@@ -61,6 +65,7 @@ public class XYXDomeTabBar: UITabBar {
                 idx += 1
             }else if subView.isKind(of: NSClassFromString("UIView")!){  }
         }
+        domeButton.isHidden = false
     }
 
     func configureDomeBtn() {
