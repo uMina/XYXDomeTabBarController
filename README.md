@@ -1,5 +1,5 @@
-# XYXDomeTabBarController
-使用Swift编写的轻量的DomeTabBar，凸起按钮可以任意设定一个位置。
+# XYXDomeTabBarController 
+使用Swift编写的轻量的DomeTabBar，凸起按钮可以任意设定一个位置。(已适配iPhoneX)
 
 ![gif](./ReadMe/aa.gif)
 
