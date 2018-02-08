@@ -26,7 +26,8 @@ class XYXViewController: XYXDomeTabBarController {
                 }
             }
         }
-//        self.domeIndex = 2
+        // 以下两行可注释掉看看
+        self.domeIndex = 2
         self.domeBar.domeButtonSize = CGSize(width: 68, height: 68)
     }
     

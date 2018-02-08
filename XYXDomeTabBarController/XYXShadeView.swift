@@ -24,7 +24,8 @@ class XYXShadeView: UIView {
         addSubview(bubbleView)
         UIView.animate(withDuration: 0.25) {
             self.bubbleView.frame = CGRect(x: 0, y: 0, width: 230, height: 80)
-            self.bubbleView.center = CGPoint(x: self.center.x, y: UIScreen.main.bounds.height-80-30)
+            let centerY = UIScreen.main.bounds.height == 812 ? UIScreen.main.bounds.height-80-30 - 34 : UIScreen.main.bounds.height-80-30
+            self.bubbleView.center = CGPoint(x: self.center.x, y: centerY)
             self.bubbleView.configureUI()
         }
         

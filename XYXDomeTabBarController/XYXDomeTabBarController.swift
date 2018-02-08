@@ -27,6 +27,11 @@ open class XYXDomeTabBarController: UITabBarController {
         configureTabBar()
     }
     
+    open override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        domeBar.domeButton.isHidden = false
+    }
+    
     // MARK: - Configure UI
     
     public func addChildViewController(_ childController: UIViewController, title:String?, imageName:String?,selectedImageName:String?) {
@@ -45,7 +50,8 @@ open class XYXDomeTabBarController: UITabBarController {
     // MARK: - Action
     
     @objc open func domeButtonClicked(_ sender:UIButton){
-        let point = CGPoint(x: sender.center.x, y: self.tabBar.frame.minY)
+        let y = min(sender.frame.minY, self.tabBar.frame.minY)
+        let point = CGPoint(x: sender.center.x, y: y)
         let shadeView = XYXShadeView(originalPoint: point)
         self.view.addSubview(shadeView)
         shadeView.bubbleView.btnA.addTarget(self, action: #selector(doWhatYouWant), for: UIControlEvents.touchUpInside)

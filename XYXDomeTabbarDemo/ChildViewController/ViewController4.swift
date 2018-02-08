@@ -22,7 +22,7 @@ class ViewController4: UIViewController {
         label.sizeToFit()
         label.layer.cornerRadius = 15.0
         label.layer.masksToBounds = true
-        label.center = CGPoint(x:view.center.x,y:view.frame.height - 100)
+        label.center = CGPoint(x:view.center.x,y:view.frame.height - 120)
         view.addSubview(label)
     }
 }
