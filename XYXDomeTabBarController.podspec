@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "XYXDomeTabBarController"
-  s.version      = "1.0.2"
+  s.version      = "1.1.0"
   s.summary      = "An easy way to create iOS tabBarController with/without dome button."
   s.description  = <<-DESC
   开发者可以通过继承XYXDomeTabBarController来快速生成带凸起按钮的TabBarController, 也可直接生成普通的.
