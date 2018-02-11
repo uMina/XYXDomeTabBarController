@@ -27,10 +27,10 @@ open class XYXDomeTabBarController: UITabBarController {
         configureTabBar()
     }
     
-    open override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        domeBar.domeButton.isHidden = false
-    }
+//    open override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//        domeBar.domeButton.isHidden = false
+//    }
     
     // MARK: - Configure UI
     

@@ -12,11 +12,7 @@ import UIKit
 public class XYXDomeTabBar: UITabBar {
     
     /// 凸起按钮.
-    public let domeButton:UIButton = {
-        let button = UIButton.init(type: UIButtonType.custom)
-        button.isHidden = true
-        return button
-    }()
+    public let domeButton = UIButton.init(type: UIButtonType.custom)
     
     /// 凸起按钮尺寸.
     public var domeButtonSize:CGSize?{
@@ -76,17 +72,19 @@ public class XYXDomeTabBar: UITabBar {
         while let responder = nextResponder {
             if responder.isKind(of: UIViewController.classForCoder()) {
                 let vc = responder as! UIViewController
-                vc.view.addSubview(domeButton)
+                
                 if let size = domeButtonSize {
+                    print("A")
                     domeButton.frame = CGRect(origin: CGPoint.zero, size: size)
                 }else{
+                    print("B")
                     let edge = frame.height + 20.0
                     domeButton.frame = CGRect(x: 0, y: 0, width: edge, height: edge)
                 }
                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+0.25, execute: {[unowned self] in
                     let btnWidth = self.bounds.width/CGFloat(self.subviews.count-1)
                     var centerY:CGFloat = 0
-                    if self.domeButton.frame.height > self.prePhoneTabBarHeight{
+                    if self.domeButton.frame.height > self.prePhoneTabBarHeight {
                         centerY = vc.view.frame.height - self.domeButton.frame.height/2
                     }else{
                         centerY = vc.view.frame.height - self.prePhoneTabBarHeight/2
@@ -96,6 +94,7 @@ public class XYXDomeTabBar: UITabBar {
                     }
                     let domeCenter = CGPoint(x:(CGFloat(self.domeIndex) + 0.5)*btnWidth, y: centerY)
                     self.domeButton.center = domeCenter
+                    vc.view.addSubview(self.domeButton)
                 })
                 break
             }
