@@ -74,10 +74,8 @@ public class XYXDomeTabBar: UITabBar {
                 let vc = responder as! UIViewController
                 
                 if let size = domeButtonSize {
-                    print("A")
                     domeButton.frame = CGRect(origin: CGPoint.zero, size: size)
                 }else{
-                    print("B")
                     let edge = frame.height + 20.0
                     domeButton.frame = CGRect(x: 0, y: 0, width: edge, height: edge)
                 }
