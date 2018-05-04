@@ -32,7 +32,6 @@ public class XYXDomeTabBar: UITabBar {
         }
     }
     
-    fileprivate let domeView = UIView()
     fileprivate let prePhoneTabBarHeight:CGFloat = 49
     
     convenience public init() {
@@ -62,41 +61,31 @@ public class XYXDomeTabBar: UITabBar {
                 let height = self.bounds.height > prePhoneTabBarHeight ? prePhoneTabBarHeight - 2 : self.bounds.height-2
                 subView.frame = CGRect(x: CGFloat(idx) * btnWidth, y: self.bounds.minY, width: btnWidth, height: height)
                 idx += 1
-            }else if subView.isKind(of: NSClassFromString("UIView")!){  }
+            }else if subView.isKind(of: NSClassFromString("UIView")!){ }
         }
     }
     
     func configureDomeBtn() {
-        addSubview(domeView)
-        var nextResponder = self.next
-        while let responder = nextResponder {
-            if responder.isKind(of: UIViewController.classForCoder()) {
-                let vc = responder as! UIViewController
-                
-                if let size = domeButtonSize {
-                    domeButton.frame = CGRect(origin: CGPoint.zero, size: size)
-                }else{
-                    let edge = frame.height + 20.0
-                    domeButton.frame = CGRect(x: 0, y: 0, width: edge, height: edge)
-                }
-                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+0.25, execute: {[unowned self] in
-                    let btnWidth = self.bounds.width/CGFloat(self.subviews.count-1)
-                    var centerY:CGFloat = 0
-                    if self.domeButton.frame.height > self.prePhoneTabBarHeight {
-                        centerY = vc.view.frame.height - self.domeButton.frame.height/2
-                    }else{
-                        centerY = vc.view.frame.height - self.prePhoneTabBarHeight/2
-                    }
-                    if self.frame.height > self.prePhoneTabBarHeight {
-                        centerY -= 34
-                    }
-                    let domeCenter = CGPoint(x:(CGFloat(self.domeIndex) + 0.5)*btnWidth, y: centerY)
-                    self.domeButton.center = domeCenter
-                    vc.view.addSubview(self.domeButton)
-                })
-                break
-            }
-            nextResponder = responder.next
+        if let size = domeButtonSize {
+            domeButton.frame = CGRect(origin: CGPoint.zero, size: size)
+        }else{
+            let edge = frame.height + 20.0
+            domeButton.frame = CGRect(x: 0, y: 0, width: edge, height: edge)
         }
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+0.1, execute: {[unowned self] in
+            let btnWidth = self.bounds.width/CGFloat(self.subviews.count-1)
+            var centerY:CGFloat = 0
+            if self.domeButton.frame.height > self.prePhoneTabBarHeight {
+                centerY = self.frame.height - self.domeButton.frame.height/2
+            }else{
+                centerY = self.frame.height - self.prePhoneTabBarHeight/2
+            }
+            if self.frame.height > self.prePhoneTabBarHeight {
+                centerY -= 34
+            }
+            let domeCenter = CGPoint(x:(CGFloat(self.domeIndex) + 0.5)*btnWidth, y: centerY)
+            self.domeButton.center = domeCenter
+            self.addSubview(self.domeButton)
+        })
     }
 }

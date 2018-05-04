@@ -26,9 +26,13 @@ class XYXViewController: XYXDomeTabBarController {
                 }
             }
         }
-        // 以下两行可注释掉看看
+        // 以下几行可注释掉看看
         self.domeIndex = 2
         self.domeBar.domeButtonSize = CGSize(width: 68, height: 68)
+        
+        self.domeButtonNormalImageName = "icon_dome_default"
+        self.domeButtonHighlightedImageName = "icon_dome_highlighted"
+        
     }
     
     /*

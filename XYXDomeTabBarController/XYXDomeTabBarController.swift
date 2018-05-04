@@ -16,6 +16,16 @@ open class XYXDomeTabBarController: UITabBarController {
             domeBar.domeIndex = domeIndex
         }
     }
+    public var domeButtonNormalImageName:String = ""{
+        didSet{
+            domeBar.domeButton.setImage(UIImage.init(named: domeButtonNormalImageName), for: UIControlState.normal)
+        }
+    }
+    public var domeButtonHighlightedImageName:String = ""{
+        didSet{
+            domeBar.domeButton.setImage(UIImage.init(named: domeButtonHighlightedImageName), for: UIControlState.highlighted)
+        }
+    }
     
     /// 可设置domeBtn
     public let domeBar = XYXDomeTabBar.init()
@@ -26,11 +36,6 @@ open class XYXDomeTabBarController: UITabBarController {
         super.viewDidLoad()
         configureTabBar()
     }
-    
-//    open override func viewDidAppear(_ animated: Bool) {
-//        super.viewDidAppear(animated)
-//        domeBar.domeButton.isHidden = false
-//    }
     
     // MARK: - Configure UI
     
