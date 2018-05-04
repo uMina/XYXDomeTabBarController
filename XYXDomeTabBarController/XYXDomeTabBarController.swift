@@ -43,8 +43,12 @@ open class XYXDomeTabBarController: UITabBarController {
         childController.title = title
         childController.tabBarItem.image = UIImage.init(named: imageName ?? "")
         childController.tabBarItem.selectedImage = UIImage.init(named: selectedImageName ?? "")
-        let navController = UINavigationController.init(rootViewController: childController)
-        self.addChildViewController(navController)
+        if childController is UINavigationController{
+            self.addChildViewController(childController)
+        }else{
+            let navController = UINavigationController.init(rootViewController: childController)
+            self.addChildViewController(navController)
+        }
     }
     
     fileprivate func configureTabBar() {
