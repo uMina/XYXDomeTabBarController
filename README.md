@@ -72,3 +72,6 @@ domeIndex = 3时：👇
 domeIndex = 4时：👇
 
 ![domeIndex = 4](./ReadMe/4.png)
+
+# 需要注意的问题：
+本项目不适合次级页面需要使用hidesBottomBarWhenPushed方法隐藏TabBar的项目使用。如果使用，会导致domeItem不会跟随隐藏。（测试SDK为iOS11.3）
