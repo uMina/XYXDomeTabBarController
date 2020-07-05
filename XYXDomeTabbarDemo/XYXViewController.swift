@@ -39,7 +39,7 @@ class XYXViewController: XYXDomeTabBarController {
     
     /*
     override func domeButtonClicked(_ sender: UIButton) {
-        <#code#>
+        
     }
     */
 }

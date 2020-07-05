@@ -12,7 +12,7 @@ import UIKit
 public class XYXDomeTabBar: UITabBar {
     
     /// 凸起按钮.
-    public let domeButton = UIButton.init(type: UIButtonType.custom)
+    public let domeButton = UIButton.init(type: UIButton.ButtonType.custom)
     
     /// 凸起按钮尺寸.
     public var domeButtonSize:CGSize?{
@@ -45,8 +45,8 @@ public class XYXDomeTabBar: UITabBar {
         
         domeButton.contentHorizontalAlignment = .fill
         domeButton.contentVerticalAlignment = .fill
-        domeButton.setImage(UIImage.init(named: "Add"), for: UIControlState.normal)
-        domeButton.setImage(UIImage.init(named: "Add_Highlighted"), for: UIControlState.highlighted)
+        domeButton.setImage(UIImage.init(named: "Add"), for: UIControl.State.normal)
+        domeButton.setImage(UIImage.init(named: "Add_Highlighted"), for: UIControl.State.highlighted)
         
         addSubview(self.domeButton)
     }
