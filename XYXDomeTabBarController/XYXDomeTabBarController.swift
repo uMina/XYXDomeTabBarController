@@ -18,12 +18,12 @@ open class XYXDomeTabBarController: UITabBarController {
     }
     public var domeButtonNormalImageName:String = ""{
         didSet{
-            domeBar.domeButton.setImage(UIImage.init(named: domeButtonNormalImageName), for: UIControlState.normal)
+            domeBar.domeButton.setImage(UIImage.init(named: domeButtonNormalImageName), for: UIControl.State.normal)
         }
     }
     public var domeButtonHighlightedImageName:String = ""{
         didSet{
-            domeBar.domeButton.setImage(UIImage.init(named: domeButtonHighlightedImageName), for: UIControlState.highlighted)
+            domeBar.domeButton.setImage(UIImage.init(named: domeButtonHighlightedImageName), for: UIControl.State.highlighted)
         }
     }
     
@@ -44,16 +44,16 @@ open class XYXDomeTabBarController: UITabBarController {
         childController.tabBarItem.image = UIImage.init(named: imageName ?? "")
         childController.tabBarItem.selectedImage = UIImage.init(named: selectedImageName ?? "")
         if childController is UINavigationController{
-            self.addChildViewController(childController)
+            self.addChild(childController)
         }else{
             let navController = UINavigationController.init(rootViewController: childController)
-            self.addChildViewController(navController)
+            self.addChild(navController)
         }
     }
     
     fileprivate func configureTabBar() {
         self.setValue(domeBar, forKey: "tabBar")
-        domeBar.domeButton.addTarget(self, action: #selector(domeButtonClicked(_:)), for: UIControlEvents.touchDown)
+        domeBar.domeButton.addTarget(self, action: #selector(domeButtonClicked(_:)), for: UIControl.Event.touchDown)
     }
     
     // MARK: - Action
@@ -63,7 +63,7 @@ open class XYXDomeTabBarController: UITabBarController {
         let point = CGPoint(x: sender.center.x, y: y)
         let shadeView = XYXShadeView(originalPoint: point)
         self.view.addSubview(shadeView)
-        shadeView.bubbleView.btnA.addTarget(self, action: #selector(doWhatYouWant), for: UIControlEvents.touchUpInside)
+        shadeView.bubbleView.btnA.addTarget(self, action: #selector(doWhatYouWant), for: UIControl.Event.touchUpInside)
     }
     
     @objc fileprivate func doWhatYouWant(){

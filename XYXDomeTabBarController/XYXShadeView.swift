@@ -29,7 +29,7 @@ class XYXShadeView: UIView {
             self.bubbleView.configureUI()
         }
         
-        bubbleView.btnA.addTarget(self, action: #selector(removeShadeView), for: UIControlEvents.touchUpInside)
+        bubbleView.btnA.addTarget(self, action: #selector(removeShadeView), for: UIControl.Event.touchUpInside)
         
     }
     
@@ -69,9 +69,9 @@ class XYXBubbleSelectorView: UIView {
     }()
 
     let btnA:UIButton = {
-        let btn = UIButton.init(type: UIButtonType.custom)
-        btn.setTitle("What you want", for: UIControlState.normal)
-        btn.setTitleColor(UIColor.init(red: 170/255.0, green: 210/255.0, blue: 210/255.0, alpha: 1), for: UIControlState.normal)
+        let btn = UIButton.init(type: UIButton.ButtonType.custom)
+        btn.setTitle("What you want", for: UIControl.State.normal)
+        btn.setTitleColor(UIColor.init(red: 170/255.0, green: 210/255.0, blue: 210/255.0, alpha: 1), for: UIControl.State.normal)
         btn.sizeToFit()
         return btn
     }()

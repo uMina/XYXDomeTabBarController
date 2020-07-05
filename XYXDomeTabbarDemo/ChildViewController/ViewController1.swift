@@ -25,14 +25,14 @@ class ViewController1: UIViewController {
         label.center = CGPoint(x:view.center.x,y:view.frame.height - 120)
         view.addSubview(label)
         
-        let btn = UIButton.init(type: UIButtonType.custom)
-        btn.setTitle("new page", for: UIControlState.normal)
+        let btn = UIButton.init(type: UIButton.ButtonType.custom)
+        btn.setTitle("new page", for: UIControl.State.normal)
         btn.frame = CGRect(x: 0, y: 0, width: 80, height: 50)
         btn.center = view.center
         btn.backgroundColor = UIColor.lightGray
         btn.layer.cornerRadius = 10.0
         btn.layer.masksToBounds = true
-        btn.addTarget(self, action: #selector(newPage), for: UIControlEvents.touchUpInside)
+        btn.addTarget(self, action: #selector(newPage), for: UIControl.Event.touchUpInside)
         view.addSubview(btn)
     }
     
